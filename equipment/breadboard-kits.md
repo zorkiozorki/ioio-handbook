@@ -17,8 +17,4 @@ The kit includes:
 - 1x Piezo Buzzer
 - Assorted LEDs
 
-The potentiometers, push buttons, buzzer, and LEDs are standard breadboard components intended for hands-on tinkering and prototyping.
-
-The kit is designed for rapid physical prototyping and experimentation with sensors, actuators, light, sound, movement, and interactive systems.
-
-> **Important:** The standard LEDs are relatively fragile and tend to fail more often than the other components. If an LED does not light up, first try another LED and check its polarity before troubleshooting the Arduino or breadboard.
+> **Important:** Standard LED rings are relatively fragile and tend to fail more often than other components. If a ring does not light up, first try another LED and check its polarity before troubleshooting the Arduino or breadboard.
