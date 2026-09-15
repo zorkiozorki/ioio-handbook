@@ -19,13 +19,8 @@ The buzzer and LED Stick are tested one at a time because they use the same D4 p
 
 ## 2. Select the board and port
 
-In Arduino IDE, select:
-
-Tools → Board → Arduino Nano 33 BLE
-
-Then select the connected port:
-
-Tools → Port → /dev/cu.usbmodem...
+• In Arduino IDE, select: Tools → Board → Arduino Nano 33 BLE
+• Then select the connected port: Tools → Port → /dev/cu.usbmodem...
 
 If several ports are listed, choose the one that appears when the Arduino is plugged in.
 
@@ -33,27 +28,19 @@ If several ports are listed, choose the one that appears when the Arduino is plu
 ## 3. Upload the test code
 
 Open the Grove Quick Test sketch and click the normal Upload arrow near the top-left of Arduino IDE.
-
 Wait until the upload finishes successfully.
 
 
 
 ## 4. Open Serial Monitor
 
-Open:
-
-Tools → Serial Monitor
+• Open: Tools → Serial Monitor
 
 You can also click the Serial Monitor icon in the top-right corner of Arduino IDE.
 
-Set the baud rate at the bottom of Serial Monitor to:
+Set the baud rate at the bottom of Serial Monitor to: 115200
 
-115200
-
-You should see:
-
-Arduino Nano 33 BLE Grove Tester
-READY
+You should see: Arduino Nano 33 BLE Grove Tester | READY
 
 
 ## 5. Run the tests
@@ -80,7 +67,8 @@ For a quick check:
 
 For this first-year Grove kit, these tests are enough for a fast functional check. The OLED can be tested separately if needed.
 
-Troubleshooting
+
+## Troubleshooting
 
 If something does not work:
 
