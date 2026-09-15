@@ -82,6 +82,11 @@ If something does not work:
 	•	One Grove module does not respond: check that it is connected to the correct port and try another Grove cable before marking the module as faulty.
 
 
+## Further Help
+
+For common setup problems, connection issues, and important notes about **3.3 V vs 5 V**, see:
+
+[Frequent Issues](../frequent-issues.md)
 
 
 
