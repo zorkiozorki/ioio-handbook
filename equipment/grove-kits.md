@@ -22,9 +22,9 @@ The kit consists of the following components:
 
 A simple Arduino test sketch is available for checking the Nano, Grove Shield, and main modules:
 
-[Grove Kit Test Code](grove-kit-test-code.ino)
+[Grove Kit Test Code](./grove-kit-test-code.ino)
 
-See the [Grove Kit Quick Test Guide](grove-kit-test-guide-2026.md) for connection instructions and troubleshooting.
+See the [Grove Kit Quick Test Guide](./grove-kit-test-guide-2026.md) for connection instructions and troubleshooting.
 
 
 ## Check In / Check Out
