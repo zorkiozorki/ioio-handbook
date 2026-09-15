@@ -8,7 +8,6 @@ No extra equipment is required beyond the kit and a computer with Arduino IDE.
 
 [Use this code to test the Breadboard Kit]( ../equipment/Breadboard-Kit-Test-Code.ino)
 
-
 ## Connections
 
 Place the Arduino Nano 33 BLE Sense on the breadboard and connect it to the computer using the USB cable.
@@ -17,19 +16,21 @@ For the quick test, both the servo and LED ring use D9 as the signal pin, so tes
 
 ### Servo Motor
 
-Servo red wire        -> 3.3V
-Servo brown/black     -> GND
-Servo orange/yellow   -> D9
-RGB LED Ring
-Ring VCC              -> 3.3V
-Ring GND              -> GND
-Ring DIN / IN         -> D9
+* **Servo red wire** -> 3.3V
+* **Servo brown/black** -> GND
+* **Servo orange/yellow** -> D9
+
+### RGB LED Ring
+
+* **Ring VCC** -> 3.3V
+* **Ring GND** -> GND
+* **Ring DIN / IN** -> D9
 
 Make sure the ring is connected to IN or DIN, not OUT or DOUT.
 
 Do not connect both the servo signal and LED ring data input to D9 at the same time.
 
-Arduino IDE Setup
+## Arduino IDE Setup
 
 Select:
 
@@ -41,8 +42,7 @@ Tools -> Port -> /dev/cu.usbmodem...
 
 Upload the Breadboard Kit test sketch using the normal Upload arrow.
 
-Open Serial Monitor
-
+## Open Serial Monitor
 
 Open:
 
@@ -58,18 +58,21 @@ You should see:
 
 Arduino Nano 33 BLE Breadboard Tester
 READY
-Run the Tests
+
+## Run the Tests
 
 Enter a number in Serial Monitor and press Send.
 
-1 - Basic Nano Test
-2 - Onboard LED Test
-3 - Servo Test
-4 - LED Ring Test
+* 1 - Basic Nano Test
+* 2 - Onboard LED Test
+* 3 - Servo Test
+* 4 - LED Ring Test
+
+### 1. Basic Nano Test
 
 Run:
 
-1.
+1
 
 The test checks that the program is running, USB Serial communication works, the timer responds, and the analog input can be read.
 
@@ -77,8 +80,7 @@ A working board should finish with:
 
 ***** NANO PASS *****
 
-
-2. Onboard LED Test
+### 2. Onboard LED Test
 
 Run:
 
@@ -86,8 +88,7 @@ Run:
 
 The onboard LED should blink several times.
 
-
-3. Servo Test
+### 3. Servo Test
 
 Connect the servo signal wire to D9 and run:
 
@@ -99,8 +100,7 @@ The servo should move approximately:
 
 If the servo moves through several clear positions, it passes the quick test.
 
-
-4. LED Ring Test
+### 4. LED Ring Test
 
 Disconnect the servo signal wire from D9.
 
@@ -114,7 +114,7 @@ Red -> Green -> Blue -> White -> Off
 
 If all LEDs light and change color, the ring passes the test.
 
-Required Libraries
+## Required Libraries
 
 The LED ring test requires the Adafruit NeoPixel library.
 
@@ -131,10 +131,9 @@ Install Adafruit NeoPixel by Adafruit.
 The servo test uses the Servo library.
 
 
-
 ## Further Help
 
-• Arduino is not detected
+### Arduino is not detected
 
 Disconnect and reconnect the USB cable.
 
@@ -150,7 +149,7 @@ Some USB cables provide power only and do not support data.
 
 If necessary, quickly press the RESET button twice and check the port list again.
 
-Arduino shows [not connected]
+### Arduino shows [not connected]
 
 The previously selected serial port is no longer available.
 
@@ -160,7 +159,7 @@ Tools -> Port
 
 macOS may assign a different port number after reconnecting the board.
 
-Nothing appears in Serial Monitor
+### Nothing appears in Serial Monitor
 
 Make sure the baud rate is set to:
 
@@ -168,8 +167,7 @@ Make sure the baud rate is set to:
 
 Press RESET once and wait for the test menu to appear.
 
-
-• Adafruit_NeoPixel.h is missing
+### Adafruit_NeoPixel.h is missing
 
 Install the Adafruit NeoPixel library from:
 
@@ -177,31 +175,29 @@ Tools -> Manage Libraries
 
 Then compile the sketch again.
 
-OpenOCD or GDB error appears
+### OpenOCD or GDB error appears
 
 The debugger was started instead of a normal upload.
 
 Use the normal Upload arrow in Arduino IDE.
 
-Servo makes a buzzing sound but does not move
+### Servo makes a buzzing sound but does not move
 
 Check all three servo connections.
 
-
-• A loose jumper wire or breadboard connection can cause the servo to buzz without moving.
+A loose jumper wire or breadboard connection can cause the servo to buzz without moving.
 
 Check:
 
-Red wire        -> 3.3V
-Brown/black     -> GND
-Orange/yellow   -> D9
+* **Red wire** -> 3.3V
+* **Brown/black** -> GND
+* **Orange/yellow** -> D9
 
 Try another jumper wire or another breadboard row if necessary.
 
 Do not leave the servo buzzing for a long time.
 
-
-• Servo does nothing
+### Servo does nothing
 
 Check that the signal wire is actually connected to D9.
 
@@ -209,20 +205,19 @@ Try testing the servo by itself with the LED ring disconnected.
 
 If the servo previously worked and suddenly stops, check for loose connections before changing the code.
 
-LED ring does not light
+### LED ring does not light
 
 Check:
 
-VCC -> 3.3V
-GND -> GND
-DIN -> D9
+* **VCC** -> 3.3V
+* **GND** -> GND
+* **DIN** -> D9
 
 Make sure the Arduino data wire is connected to DIN or IN, not DOUT or OUT.
 
 Also inspect the solder joints on the ring.
 
-
-• LED ring flashes only briefly
+### LED ring flashes only briefly
 
 This can indicate a loose power, ground, data, or solder connection.
 
@@ -230,8 +225,7 @@ Try another jumper wire and inspect the solder joints.
 
 If another ring works using the same Arduino and code, the original ring is likely damaged.
 
-
-• Breadboard circuit suddenly stops working
+### Breadboard circuit suddenly stops working
 
 Breadboard connections can easily move by one row.
 
@@ -239,20 +233,16 @@ Before changing the code, check that every jumper is still connected to the corr
 
 When troubleshooting, disconnect other components and test one device at a time.
 
-
-• Standard LEDs do not work
+### Standard LEDs do not work
 
 Standard LEDs are relatively fragile and can fail more often than other components.
 
 Try another LED and check its polarity before troubleshooting the Arduino or breadboard.
 
-3.3 V and 5 V
+### 3.3 V and 5 V
 
 The Arduino Nano 33 BLE uses 3.3 V logic.
 
 Do not feed 5 V directly into its GPIO pins.
 
 For the Breadboard Kit quick test, use the wiring and voltage specified in the test guide.
-
-
-That separation is cleaner. The guide stays short and task-focused, while `frequent-issues.md` can collect troubleshooting for both the Grove kit and Breadboard kit.
