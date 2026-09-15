@@ -2,6 +2,10 @@
 
 This quick test checks that the Arduino Nano 33 BLE, Grove Shield, Grove cables, and main Grove modules are working. No extra equipment is needed beyond the kit and a PC. (Initially tested on MacOS)
 
+# Use This Code for Arduino IDE to Test Kit's Functionality
+
+[Grove Kit Test Code](../grove-kit-test-code.ino)
+
 
 ## 1. Connect the hardware
 
