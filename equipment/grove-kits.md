@@ -17,6 +17,16 @@ The kit consists of the following components:
 - 1x [Grove to 4-pin Male Jumper Cable](https://www.seeedstudio.com/blog/getting-started/)
 - 1x set of [Grove Cables, 5 cables in each kit](https://www.seeedstudio.com/blog/getting-started/)
 
+
+## Quick Functional Test
+
+A simple Arduino test sketch is available for checking the Nano, Grove Shield, and main modules:
+
+[Grove Kit Test Code](grove-kit-test-code.ino)
+
+See the [Grove Kit Quick Test Guide](grove-kit-test-guide-2026.md) for connection instructions and troubleshooting.
+
+
 ## Check In / Check Out
 
 To check in or check out a Grove Kit, please use the form below:
