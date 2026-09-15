@@ -12,7 +12,7 @@ The kit consists of the following components:
 - 1x [Grove Vibration Motor](https://wiki.seeedstudio.com/Grove-Vibration_Motor/)
 - 1x [Grove Passive Buzzer](https://wiki.seeedstudio.com/Grove-Passive-Buzzer/)
 - 1x [Grove RGB LED Stick](https://wiki.seeedstudio.com/Grove-RGB_LED_Stick-10-WS2813_Mini/)
-- 1x [Grove OLED Display 0.96"](https://wiki.seeedstudio.com/grove_1.2inch_ips_display/)
+- 1x [Grove OLED Display 1.2"](https://wiki.seeedstudio.com/grove_1.2inch_ips_display/)
 - 1x [Qwiic to Grove Adapter Cable](https://www.sparkfun.com/qwiic-cable-grove-adapter-100mm.html)
 - 1x [Grove to 4-pin Male Jumper Cable](https://www.seeedstudio.com/blog/getting-started/)
 - 1x set of [Grove Cables, 5 cables in each kit](https://www.seeedstudio.com/blog/getting-started/)
